@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer src {
+    .btn {
+        @apply bg-orange-500 py-2 px-4 rounded-lg inline-block font-semibold border border-white hover:bg-transparent hover:text-white transition duration-300
+    }
+}
+
+@layer base {
+    .Pricingslider .swiper-button-prev,
+    .Pricingslider .swiper-button-next{
+        @apply bg-green-600 text-white top-[96%] md:top-[90%] w-[46px] rounded-full z-20
+    }
+    .Pricingslider .swiper-button-prev{
+        @apply left-[35%] md:left-[40%] lg:left-[45%]
+    }
+    .Pricingslider .swiper-button-next{
+        @apply right-[35%] md:right-[40%] lg:right-[45%]
+    } 
+    .Pricingslider .swiper-button-prev::after
+    .Pricingslider .swiper-button-next::after{
+        @apply text-lg
+    }
+}
+
