@@ -7,8 +7,9 @@ import { AiOutlineClose } from "react-icons/ai";
 import Card from './Components/Card'
 import Button from './Components/Button';
 import Navbar from './Components/Navbar';
-import Footer from './Components/Footer'
+import Footer from './Components/Footer';
 import { Roboto } from 'next/font/google';
+
 
 const roboto = Roboto({
   weight: ['400', '700'],
@@ -20,13 +21,13 @@ const Page = () => {
 
   return (
     <>
-      <div className='fixed bg-white top-0 w-full z-20 shadow-md'>
+      <div className='fixed bg-white top-0 w-full z-20 shadow-md rounded-xl'>
         <div className='container mx-auto flex justify-between items-center px-4 py-4'>
           <div className='items-center text-xl md:text-2xl font-bold'>
             <span>Co-efficient</span>
           </div>
           
-          <div className='mx-auto hidden md:flex gap-10 text-black'>
+          <div className=' hidden md:flex gap-10 text-black'>
             <Link href="" className='hover:text-blue-500 text-xl'>Features</Link>
             <Link href="#How-it-works" className='hover:text-blue-500 text-xl'>How-It-Works</Link>
             <Link href="#Pricing" className='hover:text-blue-500 text-xl'>Pricing</Link>
@@ -48,7 +49,7 @@ const Page = () => {
         </div>
       </div>
  
-      <div className='bg-blue-950 h-screen bg-cover bg-no-repeat bg-center bg-fixed flex items-center relative'>
+      <div className='bg-purple-950 h-screen bg-cover bg-no-repeat bg-center bg-fixed flex items-center relative'>
         <div className='container mx-auto px-4 z-10'>
           <div className='text-center text-white flex flex-col gap-[20px] md:gap-[40px]'>
             <div className='mx-auto text-4xl md:text-5xl lg:text-6xl font-extrabold font-serif flex tracking tracking-wider'>
